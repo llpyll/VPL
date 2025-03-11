@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta Comunitaria</title>
+    <link rel="stylesheet" href="assets/index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Encuesta Comunitaria</h1>
+        <form id="surveyForm">
+            <label for="barrio">¿De qué Barrio eres?</label>
+            <input type="text" id="barrio" name="barrio" required>
+
+            <label for="direccion">Dirección - Calle</label>
+            <input type="text" id="direccion" name="direccion" required>
+
+            <label>¿Estás conforme con el servicio de recolección de basura?</label>
+            <select id="basura" name="basura">
+                <option value="Si">Sí</option>
+                <option value="No">No</option>
+            </select>
+
+            <label>¿Estás conforme con el servicio de provisión de agua?</label>
+            <select id="agua" name="agua">
+                <option value="Si">Sí</option>
+                <option value="No">No</option>
+            </select>
+
+            <label>¿Estás conforme con el servicio de transporte interno?</label>
+            <select id="transporte" name="transporte">
+                <option value="Si">Sí</option>
+                <option value="No">No</option>
+            </select>
+
+            <label>¿Estás conforme con la seguridad de tu barrio?</label>
+            <select id="seguridad" name="seguridad">
+                <option value="Si">Sí</option>
+                <option value="No">No</option>
+            </select>
+
+            <label>¿Los centros educativos de tu comunidad están en condiciones?</label>
+            <select id="educacion" name="educacion">
+                <option value="Si">Sí</option>
+                <option value="No">No</option>
+            </select>
+
+            <label>¿En tu comunidad cuentan con sitios de recreación en condiciones?</label>
+            <select id="recreacion" name="recreacion">
+                <option value="Si">Sí</option>
+                <option value="No">No</option>
+            </select>
+
+            <label for="aporte">¿Tienes algún aporte más? Déjanos tu opinión</label>
+            <textarea id="aporte" name="aporte"></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <script src="assets/index.js"></script>
+</body>
+</html>
